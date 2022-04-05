@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+	</title>
+	<style type="text/css">
+			.head{
+				width: 200px;
+				height: 550px;
+				background-color: white;
+				text-align: center;
+			}
+			.b1{
+				width: 1400px;
+				height: 550px;
+				display: flex;
+			}
+			.box{
+				width: 1000px;
+				height: 550px;
+				background: url(southparkbg.jpg);
+				background-size: 100%;
+			}
+			.img{
+				width: 1000px;
+				height: 550px;
+
+			}
+			.nlo{
+				width: 30px; 
+				height: 30px;"
+			}
+			.aero{
+				width: 30px; 
+				height: 30px;"
+				position: absolute;
+			}
+			.ice{
+				width: 40px; 
+				height: 40px;
+				position: absolute;
+			}
+			.cloud{
+				 width: 40px; 
+				 height: 40px;
+				 position: absolute;
+			}
+			.hat{
+				width: 40px; 
+				height: 40px;
+				position: absolute;
+			}
+			.h1{
+				color: black;
+				font-family: Comic Sans MS;
+			}
+			.h2{
+				color: black;
+				font-family: Comic Sans MS;
+
+			}
+			.h3{
+				color: black;
+				font-family: Comic Sans MS;
+			}
+			.h4{
+				color: black;
+				font-family: Comic Sans MS;
+			}
+			.h5{
+				color: black;
+				font-family: Comic Sans MS;
+			}
+		</style>
+</head>
+<body>
+  <div class="b1">
+	<div class="head">
+		<h2 style="font-family: Comic Sans MS;">Найди объекты</h2>
+		<h3 class="h1">шляпа</h3>
+		<h3 class="h2">самолет</h3>
+		<h3 class="h3">мороженое</h3>
+		<h3 class="h4">пришельца</h3>
+		<h3 class="h5">облако</h3>
+		<h1 style="font-family: Comic Sans MS;">Очки:</h1>
+			<h1 class="score; font-family: Comic Sans MS;">0</h1>
+	</div>
+	<div class="box">
+		<div >
+			<img class="nlo"  src="nlo.png" style=" margin-top: 100px; margin-left: 120px;position: absolute; width: 30px; height: 30px;">
+		</div> 
+		<div >
+			<img class="aero"src="aero.png" style=" margin-top: 180px; margin-left: 850px;position: absolute; width: 30px; height: 30px;">
+		</div>
+		<div >
+			<img class="ice" src="ice.png" style=" margin-top: 320px; margin-left: 590px;position: absolute; width: 40px; height: 40px;">
+		</div>
+		<div>
+			<img  class="cloud" src="cloud.png" style=" margin-top: 50px; margin-left: 900px;position: absolute; width: 40px; height: 40px;">
+		</div>
+		<div >
+			<img class="hat" src="hat.png" style=" margin-top: 40px; margin-left: 350px;position: absolute; width: 40px; height: 40px;">
+		</div>
+	</div>
+   </div>
+
+   <script type="text/javascript">
+   	let score = 0;
+   	
+
+		document.querySelector(".nlo").onclick = function() {
+			 alert("нашел!");
+		document.querySelector(".nlo").style.display = "none" ;
+		document.querySelector(".h4").style.textDecoration = "line-through" ;
+		score = score+1;
+		document.querySelector(".score").innerHTML=score;
+			}
+			document.querySelector(".aero").onclick = function() {
+			 alert("нашел!");
+		document.querySelector(".aero").style.display = "none" ;
+		document.querySelector(".h2").style.textDecoration = "line-through" ;
+		score = score+1;
+		document.querySelector(".score").innerHTML=score;
+			}
+			document.querySelector(".ice").onclick = function() {
+			 alert("нашел!");
+		document.querySelector(".ice").style.display = "none" ;
+		document.querySelector(".h3").style.textDecoration = "line-through" ;
+		score = score+1;
+		document.querySelector(".score").innerHTML=score;
+			}
+			document.querySelector(".cloud").onclick = function() {
+			 alert("нашел!");
+		document.querySelector(".cloud").style.display = "none" ;
+		document.querySelector(".h5").style.textDecoration = "line-through" ;
+		score = score+1;
+		document.querySelector(".score").innerHTML=score;
+			}
+				document.querySelector(".hat").onclick = function() {
+			 alert("нашел!");
+		document.querySelector(".hat").style.display = "none" ;
+		document.querySelector(".h1").style.textDecoration = "line-through" ;
+		score = score+1;
+		document.querySelector(".score").innerHTML=score;
+			}
+	</script>
+
+</body>
+</html>
